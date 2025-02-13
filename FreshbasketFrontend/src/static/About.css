@@ -1,0 +1,26 @@
+.about_us {
+    margin-top: 100px;
+    padding: 4rem 2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    /* background-color: #298bec; */
+    background-image: url("../static/dw11.jpg");
+    background-size: auto;
+    width: 100%;
+    border-radius: 0.3rem;
+}
+.about_text{
+    margin-top: 25px;
+    border-radius: 50% !important;
+    text-anchor: middle;
+    text-align:justify;
+    vertical-align: middle;
+}
+
+.back{
+    background: transparent;
+}
+#Date_border{
+    margin-top: 4px;
+    border: 1px solid rgb(230, 59, 59);
+}

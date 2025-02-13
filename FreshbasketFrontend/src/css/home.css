@@ -1,0 +1,27 @@
+/* Add this to home.css */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  min-height: 100vh; /* ensures the main container covers the full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1; /* This makes sure the content takes up the available space */
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
