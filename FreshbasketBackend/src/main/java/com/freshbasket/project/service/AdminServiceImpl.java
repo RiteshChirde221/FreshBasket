@@ -23,9 +23,15 @@ public class AdminServiceImpl implements AdminService {
 		Admin admin=adminRepo.findByEmail(email);
 		System.out.println(admin.getPassword());
 		
-		if(admin!=null) {
-			return admin;
-		}
+	if (admin != null) {
+          if (admin.getPassword().equals(password)) { // Plaintext password comparison
+            return admin;
+          } else {
+            System.out.println("Invalid password.");
+         }
+      } else {
+        System.out.println("Admin not found.");
+      }
 		return null;
 	}
 
